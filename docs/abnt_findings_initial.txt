@@ -1,0 +1,30 @@
+Constatações iniciais do documento ABNTGerenciamentomédico.pdf após análise visual das páginas 1-5 em 2026-06-18.
+
+Página 1:
+- Capa com o título "SISTEMA DE AGENDAMENTO MÉDICO".
+- Instituição: Escola SENAI A. Jacob Lafer.
+- Local e período: Santo André/SP, 1º semestre 2026.
+- Autores: Andressa Vieira Papini, Gabrielly Roseghini de Paula, Guilherme Gandini, Roberth Dias Alboz.
+
+Página 2 (Resumo):
+- O resumo descreve o Neurovita como um sistema web de agendamento médico para clínicas de neurologia.
+- Tecnologias citadas: HTML, CSS, JavaScript, PHP e banco de dados.
+- Funcionalidades citadas: cadastro/autenticação de pacientes, agendamento, gerenciamento de agenda médica e estrutura administrativa.
+- O texto ainda está genérico e não reflete claramente o projeto atual com React + TypeScript + Vite + SQLite + área administrativa mais ampla + prontuários + anexos + consentimento LGPD + IA.
+
+Página 3 (Abstract):
+- O abstract replica a mesma visão geral do resumo.
+- Também cita stack genérica e precisa ser atualizada para o estado atual do projeto.
+
+Páginas 4-5 (Sumário):
+- Há seções sobre IA, UI/UX, banco de dados e modelagem.
+- O documento parece ter estrutura suficiente para atualização sem refazer do zero.
+- O título geral ainda enfatiza apenas "agendamento médico", enquanto o sistema atual cobre também gestão clínica/administrativa/financeira.
+
+Pontos preliminares a revisar no TCC/relatório:
+1. Atualizar o escopo do sistema para gestão clínica neurológica, não apenas agendamento.
+2. Atualizar a stack tecnológica para React, TypeScript, Vite, PHP, SQLite e integração opcional com IA.
+3. Refletir os módulos reais atuais: autenticação, painel do paciente, painel admin, agendamentos, prontuário, anexos, consentimento LGPD, resultados de exames e financeiro.
+4. Rever a seção de IA para deixar claro que o recurso é opcional e depende de chave configurada localmente.
+5. Revisar o capítulo de banco de dados para incluir tabelas atuais e relacionamentos reais.
+6. Conferir se o nome do sistema no corpo do texto está consistente com Neurovita em todas as seções.

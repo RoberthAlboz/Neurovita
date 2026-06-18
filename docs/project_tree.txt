@@ -1,0 +1,103 @@
+[01;34m.[0m
+├── [00mREADME.md[0m
+├── [01;34mapi[0m
+│   ├── [01;34madmin[0m
+│   │   ├── [00mappointments.php[0m
+│   │   ├── [00mchange_password.php[0m
+│   │   ├── [00mdashboard.php[0m
+│   │   ├── [00mmaintenance.php[0m
+│   │   ├── [00mpatients.php[0m
+│   │   ├── [00msessions.php[0m
+│   │   └── [00msettings.php[0m
+│   ├── [01;34mai[0m
+│   │   └── [00mchat.php[0m
+│   ├── [01;34mappointment[0m
+│   │   └── [00mschedule.php[0m
+│   ├── [01;34mauth[0m
+│   │   ├── [00mlogin.php[0m
+│   │   └── [00msignup.php[0m
+│   ├── [00mconfig.php[0m
+│   ├── [01;34mcontent[0m
+│   │   └── [00mdata.php[0m
+│   ├── [00mdatabase.sqlite.sql[0m
+│   ├── [01;34mexam[0m
+│   │   └── [00mresults.php[0m
+│   ├── [01;34mlegal[0m
+│   │   └── [00mconsent.php[0m
+│   ├── [01;34mmedical[0m
+│   │   └── [00mrecords.php[0m
+│   ├── [01;34mpatient[0m
+│   │   └── [00mattachments.php[0m
+│   ├── [00mreset_admin.php[0m
+│   ├── [00msetup_db.php[0m
+│   ├── [00mtest_connection.php[0m
+│   ├── [01;34muploads[0m
+│   │   └── [01;34mpatient_attachments[0m
+│   └── [01;34muser[0m
+│       ├── [00mupload_photo.php[0m
+│       └── [00muser.php[0m
+├── [01;34massets[0m
+│   └── [01;34mimages[0m
+│       ├── [00mdatabase_relationship.png[0m
+│       └── [00mdatabase_relationship_new.png[0m
+├── [01;34mdocs[0m
+│   ├── [00mABNT_Sugestao_Texto.md[0m
+│   ├── [00mORIENTACOES_ABNT.md[0m
+│   ├── [00mabnt_findings_initial.txt[0m
+│   ├── [00mdatabase_diagram.mmd[0m
+│   └── [00mproject_tree.txt[0m
+├── [00mindex.html[0m
+├── [00mpackage.json[0m
+├── [00mpnpm-workspace.yaml[0m
+├── [01;34mpublic[0m
+│   └── [01;34massets[0m
+│       ├── [01;34mimages[0m
+│       └── [01;34mmodels[0m
+├── [01;34mscripts[0m
+│   └── [00mmigrate_sqlite.py[0m
+├── [01;34msrc[0m
+│   ├── [00mApp.tsx[0m
+│   ├── [01;34mcomponents[0m
+│   │   ├── [01;34mbackgrounds[0m
+│   │   ├── [01;34mcommon[0m
+│   │   ├── [01;34mdashboard[0m
+│   │   ├── [01;34mlayout[0m
+│   │   ├── [01;34mlegal[0m
+│   │   ├── [01;34mmedical[0m
+│   │   ├── [01;34mpatient[0m
+│   │   └── [01;34msections[0m
+│   ├── [01;34mconstants[0m
+│   │   ├── [00mapi.ts[0m
+│   │   └── [00mapp.ts[0m
+│   ├── [01;34mcontexts[0m
+│   │   ├── [00mAuthContext.tsx[0m
+│   │   └── [00mThemeContext.tsx[0m
+│   ├── [01;34mdb[0m
+│   │   ├── [00minit.sql[0m
+│   │   └── [00minit_revised.sql[0m
+│   ├── [01;34mhooks[0m
+│   ├── [00mindex.css[0m
+│   ├── [00mmain.tsx[0m
+│   ├── [01;34mpages[0m
+│   │   ├── [00mAbout.tsx[0m
+│   │   ├── [00mAppointment.tsx[0m
+│   │   ├── [00mHome.tsx[0m
+│   │   ├── [00mLogin.tsx[0m
+│   │   ├── [00mPatientDashboard.tsx[0m
+│   │   ├── [00mUserProfile.tsx[0m
+│   │   └── [01;34madmin[0m
+│   ├── [01;34mstyles[0m
+│   │   ├── [00madmin.css[0m
+│   │   ├── [00mappointment.css[0m
+│   │   ├── [00mattachments.css[0m
+│   │   ├── [00mconsent.css[0m
+│   │   ├── [00mglobal.css[0m
+│   │   └── [00mprofile.css[0m
+│   ├── [01;34mtypes[0m
+│   └── [01;34mutils[0m
+│       └── [00mcpfValidator.ts[0m
+├── [01;32mstart_project.sh[0m
+├── [00mtsconfig.json[0m
+└── [00mvite.config.ts[0m
+
+41 directories, 60 files

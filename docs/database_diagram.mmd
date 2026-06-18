@@ -1,0 +1,38 @@
+erDiagram
+    USERS ||--o{ LOGIN_SESSIONS : "possui"
+    USERS ||--o{ APPOINTMENTS : "agenda"
+    USERS ||--o{ EXAM_RESULTS : "recebe"
+    USERS ||--o{ CONSENT_TERMS : "aceita"
+    USERS ||--o{ PATIENT_ATTACHMENTS : "anexa"
+    
+    SPECIALTIES ||--o{ PROFESSIONALS : "contém"
+    SPECIALTIES ||--o{ APPOINTMENTS : "categoriza"
+    
+    PROFESSIONALS ||--o{ APPOINTMENTS : "atende"
+    PROFESSIONALS ||--o{ MEDICAL_RECORDS : "registra"
+    
+    APPOINTMENTS ||--|| MEDICAL_RECORDS : "gera"
+    APPOINTMENTS ||--o{ PATIENT_ATTACHMENTS : "vincula"
+    
+    FINANCIAL_RECORDS {
+        int id
+        string type
+        string category
+        float amount
+        date date
+    }
+
+    USERS {
+        int id
+        string fullName
+        string email
+        string role
+    }
+
+    APPOINTMENTS {
+        int id
+        int userId
+        string specialty
+        string status
+        float appointmentValue
+    }

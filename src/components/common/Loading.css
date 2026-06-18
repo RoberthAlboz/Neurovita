@@ -1,0 +1,169 @@
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.loading-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animated Background Gradient Orbs */
+.loading-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.6;
+}
+
+.gradient-orb-1 {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #457EAC 0%, #9191E9 100%);
+  top: -20px;
+  left: -20px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.gradient-orb-2 {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #9191E9 0%, #C2AFF0 100%);
+  bottom: -10px;
+  right: -10px;
+  animation: float 8s ease-in-out infinite reverse;
+}
+
+.gradient-orb-3 {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #4361EE 0%, #457EAC 100%);
+  top: 10px;
+  right: -15px;
+  animation: float 7s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, -20px);
+  }
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-top-color: #4361EE;
+  border-right-color: #9191E9;
+  animation: spin 1.5s linear infinite;
+}
+
+.spinner-ring:nth-child(2) {
+  width: 80%;
+  height: 80%;
+  border-top-color: #9191E9;
+  border-right-color: #C2AFF0;
+  animation: spin 2s linear infinite reverse;
+  top: 10%;
+  left: 10%;
+}
+
+.spinner-ring:nth-child(3) {
+  width: 60%;
+  height: 60%;
+  border-top-color: #C2AFF0;
+  border-right-color: #4361EE;
+  animation: spin 1.2s linear infinite;
+  top: 20%;
+  left: 20%;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Loading Text */
+.loading-text {
+  position: absolute;
+  bottom: -40px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4361EE;
+  letter-spacing: 1px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .loading-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .loading-text {
+    font-size: 0.85rem;
+    bottom: -35px;
+  }
+}
+
+/* Dark Mode */
+[data-theme="dark"] .loading-overlay {
+  background: rgba(15, 15, 26, 0.95);
+}

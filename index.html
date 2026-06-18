@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurovita - Gerenciamento Médico Neurológico</title>
+
+    <!-- Performance Optimizations -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Plataforma de gerenciamento médico neurológico com visualização 3D interativa do cérebro">
+
+    <!-- Preconnect para fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Prefetch recursos críticos -->
+    <link rel="prefetch" href="/assets/models/brain_point_cloud.glb" as="fetch" crossorigin>
+
+    <!-- WebGL Performance Detection -->
+    <script>
+        if (typeof window !== 'undefined') {
+            const canvas = document.createElement('canvas');
+            const webgl2 = canvas.getContext('webgl2');
+            if (webgl2) {
+                const ext = webgl2.getExtension('WEBGL_debug_renderer_info');
+                if (ext) {
+                    console.log('WebGL2 disponível - Performance otimizada');
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
